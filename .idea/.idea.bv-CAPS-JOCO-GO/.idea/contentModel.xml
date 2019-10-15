@@ -7,7 +7,11 @@
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="clicked.cs" t="Include" />
+        <e p="Drews Stuff" t="Include">
+          <e p="clicked.cs" t="Include" />
+          <e p="textStuff.cs" t="Include" />
+        </e>
+        <e p="playerLoc.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="GitHub" t="Include">
             <e p="Editor" t="Include">
@@ -88,7 +92,6 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="textStuff.cs" t="Include" />
       </e>
       <e p="bv-CAPS-JOCO-GO.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
