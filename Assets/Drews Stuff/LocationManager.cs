@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class LocationManager : MonoBehaviour
 {
-
+    
     public GameObject[] gameObjects;
     public float locationModifer;
+	public GameObject Camera;
+    public Vector3 oldCameraPos;
+    public Quaternion oldCameraRot;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +23,10 @@ public class LocationManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void returnCamera()
+    {
+        Camera.transform.position = oldCameraPos;
+        Camera.transform.rotation = oldCameraRot;
     }
 }
