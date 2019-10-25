@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class clicked : MonoBehaviour
 {
-    public GameObject Location_Manager_Object;
-    private LocationManager locationManager;
+
     public GameObject camera;
     public GameObject sign;
     public float movespeed = 35.0f;
@@ -30,8 +29,6 @@ public class clicked : MonoBehaviour
     {
         if (!zoomed)
         {
-            locationManager.oldCameraPos = camera.transform.position;
-            locationManager.oldCameraRot = camera.transform.rotation;
             zoomed = true;
             movingtowardstarget = true;
             sign.SetActive(true);
