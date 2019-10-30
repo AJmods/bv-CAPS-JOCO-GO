@@ -1,19 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
+[System.Serializable]
 public class LocationManager : MonoBehaviour
 {
     
     public GameObject[] gameObjects;
-    public float locationModifer;
-	public GameObject Camera;
+    [FormerlySerializedAs("locationModifer")] public float locationMultipler;
+
+    public float locationOffsetX;
+    public float locationOffsetZ;
     // Start is called before the first frame update
     void Start()
     {
         foreach (GameObject locObjects in gameObjects)
         {
-            locObjects.transform.position = new Vector3(transform.position.x * locationModifer, transform.position.y, transform.position.z * locationModifer);
+            locObjects.transform.position = new Vector3((transform.position.x + locationOffsetX)* locationMultipler, transform.position.y, (transform.position.z+ locationOffsetZ)* locationMultipler);
         }
     }
 
@@ -21,5 +25,10 @@ public class LocationManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void backButtonPressed(GameObject parentMenu) //hide the menu
+    {
+        parentMenu.SetActive(false);
     }
 }

@@ -8,10 +8,14 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Drews Stuff" t="Include">
-          <e p="clicked.cs" t="Include" />
+          <e p="LocationManager.cs" t="Include" />
+          <e p="old scripts" t="Include">
+            <e p="clicked.cs" t="Include" />
+          </e>
+          <e p="playerLoc.cs" t="Include" />
+          <e p="SiteController.cs" t="Include" />
           <e p="textStuff.cs" t="Include" />
         </e>
-        <e p="playerLoc.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="GitHub" t="Include">
             <e p="Editor" t="Include">
