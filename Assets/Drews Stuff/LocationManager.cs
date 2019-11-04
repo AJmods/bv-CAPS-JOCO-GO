@@ -15,9 +15,9 @@ public class LocationManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach (GameObject locObjects in gameObjects)
+        foreach (GameObject locObject in gameObjects)
         {
-            locObjects.transform.position = new Vector3((transform.position.x + locationOffsetX)* locationMultipler, transform.position.y, (transform.position.z+ locationOffsetZ)* locationMultipler);
+            locObject.transform.position = new Vector3((locObject.transform.position.x + locationOffsetX)* locationMultipler, locObject.transform.position.y, (locObject.transform.position.z+ locationOffsetZ)* locationMultipler);
         }
     }
 
