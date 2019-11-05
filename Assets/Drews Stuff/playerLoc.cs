@@ -8,6 +8,8 @@ public class playerLoc : MonoBehaviour
     public GameObject location_Mangager_object;
     private LocationManager locationManager;
 
+    public GameObject LocObject;
+
     private float locationMultipler;
     private float locationOffsetX;
     private float locationOffsetZ;
@@ -33,4 +35,5 @@ public class playerLoc : MonoBehaviour
             Input.location.Start();
         }
     }
+    
 }

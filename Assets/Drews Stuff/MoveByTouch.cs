@@ -31,7 +31,7 @@ public class MoveByTouch : MonoBehaviour
                 FirstPoint = Input.GetTouch(0).position;
                 xAngleTemp = xAngle;
                 yAngleTemp = yAngle;
-                Debug.Log("TOUCHED");
+                //Debug.Log("TOUCHED");
             }
             if (Input.GetTouch(0).phase == TouchPhase.Moved)
             {

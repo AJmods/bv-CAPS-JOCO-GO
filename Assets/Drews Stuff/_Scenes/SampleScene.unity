@@ -160,9 +160,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11703631}
-  m_Text: "JOCO\n ART MUSAM"
+  m_Text: Mahaffie House
   m_OffsetZ: 0
-  m_CharacterSize: 0.13
+  m_CharacterSize: 0.1
   m_LineSpacing: 1
   m_Anchor: 1
   m_Alignment: 1
@@ -671,7 +671,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27088859}
-  m_Text: "JOCO\n ART MUSAM"
+  m_Text: CAPS
   m_OffsetZ: 0
   m_CharacterSize: 0.13
   m_LineSpacing: 1
@@ -1438,6 +1438,7 @@ GameObject:
   - component: {fileID: 241324758}
   - component: {fileID: 241324757}
   - component: {fileID: 241324756}
+  - component: {fileID: 241324760}
   m_Layer: 8
   m_Name: Mahaffie House
   m_TagString: Untagged
@@ -1480,7 +1481,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241324754}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0052e31db432d4a438d599d74702177b, type: 3}
   m_Name: 
@@ -1532,6 +1533,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241324754}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &241324760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241324754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4208e32f9768b4bf0bab04ce5c355ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationManager2Object: {fileID: 2076826108}
+  player: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!1 &396833197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2627,12 +2643,12 @@ RectTransform:
   - {fileID: 1367738593}
   - {fileID: 1511144965}
   - {fileID: 1236074685}
-  m_Father: {fileID: 1602474841}
+  m_Father: {fileID: 1429549730}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030517578, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &753838059
@@ -2959,7 +2975,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848663008}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2967,7 +2983,7 @@ RectTransform:
   - {fileID: 541156832}
   - {fileID: 529311793}
   - {fileID: 33129138}
-  m_Father: {fileID: 1602474841}
+  m_Father: {fileID: 1429549730}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2988,7 +3004,7 @@ GameObject:
   - component: {fileID: 895302282}
   - component: {fileID: 895302281}
   - component: {fileID: 895302284}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3082,6 +3098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   location_Mangager_object: {fileID: 2076826108}
+  LocObject: {fileID: 0}
 --- !u!1 &908720176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3415,7 +3432,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147468709}
-  m_Text: "JOCO\n ART MUSAM"
+  m_Text: 'JOCO
+
+    art museam'
   m_OffsetZ: 0
   m_CharacterSize: 0.13
   m_LineSpacing: 1
@@ -3480,6 +3499,7 @@ GameObject:
   - component: {fileID: 1166453403}
   - component: {fileID: 1166453401}
   - component: {fileID: 1166453402}
+  - component: {fileID: 1166453405}
   m_Layer: 8
   m_Name: JOCO art musam
   m_TagString: Untagged
@@ -3509,7 +3529,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166453399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0052e31db432d4a438d599d74702177b, type: 3}
   m_Name: 
@@ -3574,6 +3594,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166453399}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1166453405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166453399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4208e32f9768b4bf0bab04ce5c355ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationManager2Object: {fileID: 2076826108}
+  player: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!1 &1175637889
 GameObject:
   m_ObjectHideFlags: 0
@@ -3760,12 +3795,12 @@ RectTransform:
   - {fileID: 13505574}
   - {fileID: 406195862}
   - {fileID: 1019019875}
-  m_Father: {fileID: 1602474841}
+  m_Father: {fileID: 1429549730}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000091552734, y: -0.00018310547}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1200763888
@@ -4237,9 +4272,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419933970}
-  m_Text: "JOCO\n ART MUSAM"
+  m_Text: "Shawnee Indian \nMission"
   m_OffsetZ: 0
-  m_CharacterSize: 0.13
+  m_CharacterSize: 0.105
   m_LineSpacing: 1
   m_Anchor: 1
   m_Alignment: 1
@@ -4289,6 +4324,41 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &1429549729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429549730}
+  m_Layer: 0
+  m_Name: Site Menus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1429549730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429549729}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 848663009}
+  - {fileID: 728829627}
+  - {fileID: 1670864798}
+  - {fileID: 2113941415}
+  - {fileID: 1184180356}
+  m_Father: {fileID: 1602474841}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1439878061
 GameObject:
   m_ObjectHideFlags: 0
@@ -4302,6 +4372,7 @@ GameObject:
   - component: {fileID: 1439878065}
   - component: {fileID: 1439878064}
   - component: {fileID: 1439878063}
+  - component: {fileID: 1439878067}
   m_Layer: 8
   m_Name: Shawnee Indian Mission
   m_TagString: Untagged
@@ -4344,7 +4415,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439878061}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0052e31db432d4a438d599d74702177b, type: 3}
   m_Name: 
@@ -4396,6 +4467,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439878061}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1439878067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439878061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4208e32f9768b4bf0bab04ce5c355ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationManager2Object: {fileID: 2076826108}
+  player: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!1 &1511144964
 GameObject:
   m_ObjectHideFlags: 0
@@ -4714,11 +4800,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 848663009}
-  - {fileID: 728829627}
-  - {fileID: 1670864798}
-  - {fileID: 2113941415}
-  - {fileID: 1184180356}
+  - {fileID: 1429549730}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5177,12 +5259,12 @@ RectTransform:
   - {fileID: 1655833689}
   - {fileID: 152921649}
   - {fileID: 1200763889}
-  m_Father: {fileID: 1602474841}
+  m_Father: {fileID: 1429549730}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000091552734, y: -0.00018310547}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1697793476
@@ -5291,6 +5373,7 @@ GameObject:
   - component: {fileID: 1700684664}
   - component: {fileID: 1700684663}
   - component: {fileID: 1700684662}
+  - component: {fileID: 1700684667}
   m_Layer: 8
   m_Name: Leglar Barn
   m_TagString: Untagged
@@ -5318,7 +5401,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700684661}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0052e31db432d4a438d599d74702177b, type: 3}
   m_Name: 
@@ -5385,6 +5468,21 @@ Transform:
   m_Father: {fileID: 775328590}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1700684667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700684661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4208e32f9768b4bf0bab04ce5c355ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationManager2Object: {fileID: 2076826108}
+  player: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!1 &1749466701
 GameObject:
   m_ObjectHideFlags: 0
@@ -5398,6 +5496,7 @@ GameObject:
   - component: {fileID: 1749466705}
   - component: {fileID: 1749466704}
   - component: {fileID: 1749466703}
+  - component: {fileID: 1749466707}
   m_Layer: 8
   m_Name: CAPS
   m_TagString: Untagged
@@ -5440,7 +5539,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749466701}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0052e31db432d4a438d599d74702177b, type: 3}
   m_Name: 
@@ -5492,6 +5591,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749466701}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1749466707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749466701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4208e32f9768b4bf0bab04ce5c355ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationManager2Object: {fileID: 2076826108}
+  player: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!1 &1775178280
 GameObject:
   m_ObjectHideFlags: 0
@@ -5916,6 +6030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2076826110}
   - component: {fileID: 2076826109}
+  - component: {fileID: 2076826111}
   m_Layer: 0
   m_Name: Location Manger
   m_TagString: Untagged
@@ -5930,7 +6045,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076826108}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bc9f82d8ff72491abc78c19feae57dd, type: 3}
   m_Name: 
@@ -5941,7 +6056,8 @@ MonoBehaviour:
   - {fileID: 1700684661}
   - {fileID: 241324754}
   - {fileID: 1184180355}
-  locationMultipler: 200
+  locationMultipler: 400
+  colliderRadius: 0
   locationOffsetX: 0
   locationOffsetZ: 0
 --- !u!4 &2076826110
@@ -5958,6 +6074,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076826111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076826108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb257ce510ea4d0bacfcee0ef0321c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sitesParent: {fileID: 775328589}
+  menuParent: {fileID: 1429549729}
+  menus: []
+  sites: []
+  locationMultipler: 400
+  colliderRadius: 0.1
+  locationOffsetX: 0
+  locationOffsetZ: 0
 --- !u!1 &2097481434
 GameObject:
   m_ObjectHideFlags: 0
@@ -5998,7 +6134,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097481434}
-  m_Text: "JOCO\n ART MUSAM"
+  m_Text: Leglar Barn
   m_OffsetZ: 0
   m_CharacterSize: 0.13
   m_LineSpacing: 1
@@ -6147,12 +6283,12 @@ RectTransform:
   - {fileID: 836138173}
   - {fileID: 2122637436}
   - {fileID: 396833198}
-  m_Father: {fileID: 1602474841}
+  m_Father: {fileID: 1429549730}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000091552734, y: -0.00018310547}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2122637435
