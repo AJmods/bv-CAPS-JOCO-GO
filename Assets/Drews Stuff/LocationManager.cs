@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
+
+/*
+ * DO NOT USE
+ * OLD FILE
+ */
 [System.Serializable]
 public class LocationManager : MonoBehaviour
 {
